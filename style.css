@@ -90,9 +90,9 @@ body {
 .gray-line-transform-small {
   -webkit-transition: .6s;
   transition: .6s;
-  -webkit-transform: scale(0.75);
-          transform: scale(0.75);
-  top: 10px !important;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+  top: 2px !important;
   -webkit-filter: none;
           filter: none; }
 
