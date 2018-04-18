@@ -1,10 +1,10 @@
-let speedometr = new Vivus('spd', {duration: 200, start: 'autostart', file: './1.svg', onReady: function (myVivus) {
+let speedometr = new Vivus('spd', {duration: 1000, start: 'autostart', file: './1.svg', onReady: function (myVivus) {
    
     myVivus.el.setAttribute('opacity', '1');
     myVivus.el.setAttribute('filter', 'url(#dropShadow)');
     myVivus.el.setAttribute('class', 'gray-line-2-svg');
   }});
-let greayLine = new Vivus('spd', {duration: 100, start: 'autostart', file: './2.svg', onReady: function (myVivus) {
+let greayLine = new Vivus('spd', {duration: 1000, start: 'autostart', file: './2.svg', onReady: function (myVivus) {
    
     myVivus.el.setAttribute('opacity', '1');
     myVivus.el.setAttribute('class', 'gray-line-svg');
@@ -51,7 +51,7 @@ function drawProgress() {
     let spdBlock = document.getElementById('spd')
     
     let icoSum = 33.4;
-    let animTime = 2700;
+    let animTime = 5700;
   
   
     var canvas = SVG('spd').viewbox(-8,17,363,263)
