@@ -1,0 +1,94 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+#spd, #svg-lines {
+    position:relative;
+    
+    transform: rotateX(50deg);
+    transition: 1s;
+    perspective: 700px;
+    perspective-origin: center center;
+    display: block;
+    width: 30%;
+    height: 100%;
+    margin: 100px auto;
+    @media(max-width:1500px) {
+        width: 50%;
+    }
+    @media(max-width:1200px) {
+        width: 60%;
+    }
+    @media(max-width:1000px) {
+        width: 70%;
+    }
+    @media(max-width:800px) {
+        width: 80%;
+    }
+    @media(max-width:600px) {
+        width: 90%;
+    }
+    .yellow-line-svg {
+        position: absolute;
+        top:-2px;
+        left:0;
+        width: 100%; 
+        clip-path: polygon(0 0, 50% 60%, 50% 100%, 0 100%);
+    }
+    #SvgjsPath1008{
+        width: 100%;
+    }
+    #Artboard {
+        transition: .5s;
+    }
+    svg {
+        
+        top: 0;
+        left:0;
+       
+        /*  transition: 1s; 
+         &:first-child {
+            transform: scale(1.1)
+        }  */
+    }
+}
+
+#canv {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    
+  }
+  .spdm {
+      width: 30%;
+      margin: 100px auto;
+        position: relative;
+  }
+
+  .gray-line-svg {
+    
+    position: absolute;
+    top:-2px;
+    left:0;
+    width: 100%; 
+    transform: scale(0.5);
+    filter: url(#dropShadow);
+  }
+  .shadow-1 {
+    filter: url(#dropShadow2);
+  }
+  .gray-line-transform {
+    transition: .8s;
+    transform: scale(1);
+    top:-2px !important;
+    filter: none;
+  }
+  .gray-line-transform-small {
+    transition: .6s;
+    transform: scale(0.85);
+    top:2px !important;
+    filter: none;
+  }

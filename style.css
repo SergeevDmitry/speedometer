@@ -1,0 +1,99 @@
+body {
+  width: 100%;
+  height: 100%; }
+
+#spd, #svg-lines {
+  position: relative;
+  -webkit-transform: rotateX(50deg);
+          transform: rotateX(50deg);
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-perspective: 700px;
+          perspective: 700px;
+  -webkit-perspective-origin: center center;
+          perspective-origin: center center;
+  display: block;
+  width: 30%;
+  height: 100%;
+  margin: 100px auto; }
+  @media (max-width: 1500px) {
+    #spd, #svg-lines {
+      width: 50%; } }
+  @media (max-width: 1200px) {
+    #spd, #svg-lines {
+      width: 60%; } }
+  @media (max-width: 1000px) {
+    #spd, #svg-lines {
+      width: 70%; } }
+  @media (max-width: 800px) {
+    #spd, #svg-lines {
+      width: 80%; } }
+  @media (max-width: 600px) {
+    #spd, #svg-lines {
+      width: 90%; } }
+  #spd .yellow-line-svg, #svg-lines .yellow-line-svg {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 100%;
+    -webkit-clip-path: polygon(0 0, 50% 60%, 50% 100%, 0 100%);
+            clip-path: polygon(0 0, 50% 60%, 50% 100%, 0 100%); }
+  #spd #SvgjsPath1008, #svg-lines #SvgjsPath1008 {
+    width: 100%; }
+  #spd #Artboard, #svg-lines #Artboard {
+    -webkit-transition: .5s;
+    transition: .5s; }
+  #spd svg, #svg-lines svg {
+    top: 0;
+    left: 0;
+    /*  transition: 1s; 
+     &:first-child {
+        transform: scale(1.1)
+    }  */ }
+
+#canv {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto; }
+
+.spdm {
+  width: 30%;
+  margin: 100px auto;
+  position: relative; }
+
+.gray-line-svg {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 100%;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-filter: url(#dropShadow);
+          filter: url(#dropShadow); }
+
+.shadow-1 {
+  -webkit-filter: url(#dropShadow2);
+          filter: url(#dropShadow2); }
+
+.gray-line-transform {
+  -webkit-transition: .8s;
+  transition: .8s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  top: -2px !important;
+  -webkit-filter: none;
+          filter: none; }
+
+.gray-line-transform-small {
+  -webkit-transition: .6s;
+  transition: .6s;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+  top: 2px !important;
+  -webkit-filter: none;
+          filter: none; }
+
+/*# sourceMappingURL=style.css.map */

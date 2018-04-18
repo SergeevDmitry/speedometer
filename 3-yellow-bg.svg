@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400px" height="342px" viewBox="0 0 400 342" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>3-yellow-bg</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-8" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.149999991">
+        <g id="Artboard" transform="translate(-752.000000, -411.000000)" fill="#FFB600">
+            <g id="yellow" transform="translate(738.000000, 396.000000)">
+                <path d="M72.5898858,356.432597 C36.3903981,320.238828 14,270.234193 14,215 C14,104.54305 103.54305,15 214,15 C324.45695,15 414,104.54305 414,215 C414,270.218225 391.622546,320.209916 355.441506,356.401204 L214.040303,215 C119.75097,309.272481 72.6041947,356.406616 72.5999756,356.402407 C72.5966059,356.412469 72.5932427,356.422532 72.5898858,356.432597 Z" id="3-yellow-bg"></path>
+            </g>
+        </g>
+    </g>
+</svg>
