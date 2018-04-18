@@ -1,7 +1,7 @@
 body {
     width: 100%;
     height: 100%;
-    background-color: #000;
+    background-color: #aeaeae;
 }
 #spd, #svg-lines {
     position:relative;
@@ -12,8 +12,9 @@ body {
     perspective-origin: center center;
     display: block;
     width: 30%;
-    height: 100%;
+    height: 700px;
     margin: 100px auto;
+    
     @media(max-width:1500px) {
         width: 50%;
     }
@@ -43,8 +44,7 @@ body {
         transition: .5s;
     }
     svg {
-        
-        top: 0;
+        top:0;
         left:0;
        
         /*  transition: 1s; 
@@ -72,7 +72,7 @@ body {
   .gray-line-svg {
     
     position: absolute;
-    top:-2px;
+    top:-5px;
     left:0;
     width: 100%; 
     transform: scale(0.5);

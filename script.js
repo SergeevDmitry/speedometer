@@ -1,14 +1,14 @@
-let speedometr = new Vivus('spd', {duration: 1000, start: 'autostart', file: './1.svg', onReady: function (myVivus) {
+let speedometr = new Vivus('spd', {duration: 100, start: 'autostart', file: './1.svg', onReady: function (myVivus) {
    
     myVivus.el.setAttribute('opacity', '1');
     myVivus.el.setAttribute('filter', 'url(#dropShadow)');
     myVivus.el.setAttribute('class', 'gray-line-2-svg');
   }});
-let greayLine = new Vivus('spd', {duration: 1000, start: 'autostart', file: './2.svg', onReady: function (myVivus) {
+let greayLine = new Vivus('spd', {duration: 100, start: 'autostart', file: './2.svg', onReady: function (myVivus) {
    
     myVivus.el.setAttribute('opacity', '1');
     myVivus.el.setAttribute('class', 'gray-line-svg');
-  }}, drawProgress);
+  }}, transform);
 
 let spdBlock = document.getElementById('spd')
 
@@ -44,16 +44,21 @@ function transform() {
     setTimeout(function(){
         gl[0].classList.add('gray-line-transform-small') 
         gl2[0].classList.add('gray-line-transform') 
+        
     },300)
+    setTimeout(function(){
+        drawProgress()
+        
+    },800)
 }
 
 function drawProgress() {
     let spdBlock = document.getElementById('spd')
     
-    let icoSum = 33.4;
-    let animTime = 5700;
+    let icoSum = 25;
+    let animTime = 2700;
   
-  
+    var svg = document.querySelector("svg")
     var canvas = SVG('spd').viewbox(-8,17,363,263)
       
       , path = canvas.path("m50,295 C19,264 0,221 0,173 C0,77 77,0 173,0 C269,0 347,77 347,173 C347,221 327,265 295,296")
@@ -62,78 +67,81 @@ function drawProgress() {
       , text = canvas.text(`${icoSum}`).font({
         family:   'Helvetica'
       , size:     36
-      
-      
       })
-      , length2 = path2.length()					
-      , circle = canvas.circle(10)					
-      					
+      , length2 = path2.length()			
+      /* , arrow = canvas.path('m434.691154 248.247831h6l-3-88.774917z', 50, 100).fill("#ffb600" ) */		
+      , circle = canvas.circle(15)					
       
-      spdBlock.getElementsByTagName('svg')[2].style.position = 'absolute'
+      
+      
+    spdBlock.getElementsByTagName('svg')[2].style.position = 'absolute'
       
       
     
-    path.fill('none').stroke({width:0, color: 'rgba(255, 215, 0, .5)'})
-    path2.fill('none').stroke({width:0, color: 'rgba(255, 215, 0, .5)'})
-    circle.fill('rgba(255, 215, 0, 1)')
-   
+    path.fill('none').stroke({width:0, color: '#ffb600'})
+    path2.fill('none').stroke({width:0, color: '#ffb600'})
+    circle.fill('rgba(255, 182, 0, 1)')
+    
     
     
     let x1 = 52,
         y1 =295,
-        cx = 178,
-        cy = 180;
-        /* sx1 = 76,
-        sy1 = 254; */
+        cx = 174,
+        cy = 172;
+        
+    let smallcircleId = "";
 
     function prg(x2, y2, icoS) {
-        let progressPath = canvas.path(`m${x1} ${y1} L${x2} ${y2} L${cx} ${cy} `)
+        let elem = document.getElementById(smallcircleId);
+        /* console.log(elem.getAttribute('stroke-width')) */
+        
+
+        let progressPath = canvas.path(`m${x1} ${y1} L${x2} ${y2} L${cx} ${cy} `).fill('rgba(255, 182, 0, .5)')
+
+        
+        
         let progressPath2 = canvas.path(`m${x1} ${y1} L${x2} ${y2} `)
-       
-       /*  let progressPath3 = canvas.path(`m${sx1} ${sy1} L${sx2} ${sy2} `) */
+
+        
+       /*  let arrow = canvas.path(`m${cx-20} ${cy} L${cx+20} ${cy} L${x2} ${y2} z `).fill('rgba(255, 182, 0, 1)') */
+
+        let circle3 = canvas.circle(290).fill('none').stroke({width:55, color: 'rgba(255, 182, 0, .5)'}).center(cx, cy)
+        let mask = canvas.mask().add(circle3)
+        progressPath2.fill('none').stroke({width:5, color: 'rgba(255, 182, 0, 1)'})
+        progressPath.maskWith(mask)
+       /*  arrow.maskWith(mask) */
+        let circle2 = canvas.circle(10).fill('none').stroke({width:0, color: '#3B0315'}).center(x2, y2)
+
+        smallcircleId = circle2.node.id
+        
+        
+         
+        text.center(cx, cy).fill('rgba(255, 182, 0, 1)')
+        text.text(`$${icoS}M`)
+
+
         x1 = x2;
         y1 = y2;
-      /*   sx1 = sx2;
-        sy1 = sy2; */
-        progressPath.fill('rgba(255, 215, 0, .3)')
-        progressPath2.fill('none').stroke({width:4, color: 'rgba(255, 215, 0, 1)'})
-        
-        
-        text.center(cx, cy)
-        text.text(`$${icoS}M`)
-       
-       /*  progressPath3.fill('none').stroke({width:4, color: 'rgba(255, 215, 0, 1)'}) */
+   
     }
+    
     text.animate(animTime).during(function(pos, morph, eased){
         let progress = 16.3426*icoSum 
         let progress2 = 11.82*icoSum 
+
         let icoS = (icoSum*eased).toFixed(1)
         var p = path.pointAt(eased * progress)
         var p1 = path2.pointAt(eased * progress2)
         prg(p.x, p.y, icoS)
         circle.center(p.x, p.y)
+        /* arrow.center(p.x, p.y+10)
+       console.log(arrow) */
 
         if(eased> 0.8) {
-            transform()
+            
             spdBlock.style.transform = 'rotateX(0)'
         }
-       /*  
-         if(p.x<100) {
-            text.center(p.x-40, p.y)
-        }
-        if(p.x>100 && p.x<150) {
-            text.center(p.x, p.y-15)
-        }
-        if(p.x>100 && p.x<200) {
-            text.center(p.x, p.y-25)
-        }
-        if(p.x>200 && p.x<250) {
-            text.center(p.x+10, p.y-15)
-        }
-        if(p.x>250 ) {
-            text.center(p.x+40, p.y)
-        }  */
-        
+     
     
     })
     /* .after(function() {
