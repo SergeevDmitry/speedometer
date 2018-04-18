@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Terms of Use</title>
+
+    <script defer src="/fonts/fontawesome/svg-with-js/js/fontawesome-all.min.js"></script>
+    <link rel="stylesheet" href="/css/private-funding.css">
+
+    <style>
+      h1,
+      table {
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+      }
+
+      table {
+        width: 600px;
+        border: 1px solid #fff;
+      }
+
+      table td {
+        border: 1px solid #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Subscribed investors list</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Email</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+
+      <tbody border="1" cellpadding="0">
+        {{#each subscriptions}}
+        <tr>
+          <td>{{email}}</td>
+          <td>{{format_date ./createdAt}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </body>
+</html>

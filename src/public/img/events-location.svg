@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="16px" viewBox="0 0 10 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>events-location</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bcb-ico-1366" transform="translate(-943.000000, -7874.000000)">
+            <g id="you-can-meet-us" transform="translate(213.000000, 7800.000000)">
+                <g id="events-location" transform="translate(730.000000, 74.000000)">
+                    <path d="M8.95174888,7.20879818 L8.98043888,7.15079476 C9.3200053,6.50427549 9.5,5.78261052 9.5,5.03377778 C9.5,2.52908048 7.4845351,0.5 5,0.5 C2.51548945,0.5 0.5,2.5290557 0.5,5.0336 C0.5,5.7385703 0.65946815,6.41944557 0.964556827,7.04241007 L1.00701964,7.13228924 L4.99910833,14.9055168 L8.95174888,7.20879818 Z" id="Path" stroke="#FFB600"></path>
+                    <path d="M5,4 C4.44768041,4 4,4.44776632 4,5 C4,5.55223368 4.44776632,6 5,6 C5.55223368,6 6,5.55223368 6,5 C6,4.44776632 5.55231959,4 5,4 Z" id="Path" fill="#FFB600"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

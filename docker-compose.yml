@@ -1,0 +1,26 @@
+version: "3"
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    image: bcb-landing-web
+    container_name: bcb-landing-web-2
+    working_dir: /web
+    command: bash -c 'while true; do sleep 60; done'
+    volumes:
+      - '.:/web'
+    env_file:
+      - .env.local
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo
+    container_name: bcb-landing-mongo-2
+    volumes:
+      - ./data/mongo/db:/data/db
+    ports:
+      - "27017"

@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <title>BCB ATM - TGE</title>
+  <meta name="description" content="Buy and sell Bitcoin instantly at our Bitcoin ATM with locations in London, Essex, Coventry, Leicester, Luton and Birmingham">
+
+  <script defer src="/fonts/fontawesome/svg-with-js/js/fontawesome-all.min.js"></script>
+  <link rel="stylesheet" href="/slick/slick.css">
+  <link rel="stylesheet" href="/slick/slick-theme.css">
+  <link rel="stylesheet" href='/css/style.css'>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117166997-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-117166997-1');
+  </script>
+</head>
+
+<body>
+  <div class="loader-wrapper">
+    <div class="bg-1"></div>
+    <div class="bg-2"></div>
+    <div class="loader"></div>
+  </div>
+  <div class="bcg-1" id="ico">
+  </div>
+  <div class="main-block">
+    <header>
+    <div class='logo'>
+      <img src="./img/bitmap@3x.png" alt="">
+    </div>
+    <div style="display: none;" class="ico-countdown">
+      <span>ICO ends in</span>
+      <div class="countdown">
+        <!-- Script.js - #1 -->
+        <div class="days"></div>
+        :
+        <div class="hours"></div>
+        :
+        <div class="mins"></div>
+
+      </div>
+
+    </div>
+    <div class="buy-bcb-btn">
+      <a target="_blank" href="https://t.me/bcbatmofficial">Telegram</a>
+      <div class="bcg-btn"></div>
+    </div>
+  </header>
+  <ul class="left-fixed-menu">
+    <li class="menu1">
+      <div class="left-fixed-menu-circle"></div>
+      <a href="#ico" class="menuLink">ICO</a>
+    </li>
+    <li class="menu2">
+      <div class="left-fixed-menu-circle"></div>
+      <a href="#aboutUs" class="menuLink">About Us</a>
+    </li>
+    <li class="menu3">
+      <div class="left-fixed-menu-circle"></div>
+      <a href="#goals" class="menuLink">Goals</a>
+    </li>
+   <li class="menu6">
+      <div class="left-fixed-menu-circle"></div>
+      <a href="#roadmap" class="menuLink">Roadmap</a>
+    </li> 
+    <li class="menu7">
+      <div class="left-fixed-menu-circle"></div>
+      <a href="#papers" class="menuLink">Papers</a>
+    </li>
+    <li class="menu8">
+      <div class="left-fixed-menu-circle"></div>
+      <a href="#team" class="menuLink">Team</a>
+    </li>
+    <li class="menu9">
+      <div class="left-fixed-menu-circle"></div>
+      <a href="#events" class="menuLink">Events</a>
+    </li>
+    <!--     <li class="menu10">
+        <div class="left-fixed-menu-circle"></div>
+        <a href="#press" class="menuLink">Press about Us</a>
+      </li> -->
+    <li class="menu11">
+      <div class="left-fixed-menu-circle"></div>
+      <a href="#faq" class="menuLink">FAQ</a>
+    </li>
+    <li class="menu12">
+      <div class="left-fixed-menu-circle"></div>
+      <a href="#getin" class="menuLink">Get in touch</a>
+    </li>
+
+  </ul>
+  <h1>The Bitcoin ATM Network</h1>
+  {{!-- <p class="description">BCB ATM is the UK’s fastest growing operator of Bitcoin ATM’s and is bringing online currency to the local high streets.
+    </p> --}}
+    <div class="speedometr">
+      <div id="spd"></div>
+    </div>
+  
+
+
+  <div class="canvas">
+    <canvas id="canv" style="display: block;"></canvas>
+
+
+    <div class="canvas-marker sp-goal-1">
+      <div class="inner-circle"></div>
+      <span>$5M
+
+      </span>
+    </div>
+    <div class="canvas-marker sp-goal-2">
+      <div class="inner-circle"></div>
+      <span>$10M
+
+      </span>
+    </div>
+    <div class="canvas-marker sp-goal-3">
+      <div class="inner-circle"></div>
+      <span>$15M
+
+      </span>
+    </div>
+    <div class="canvas-marker sp-goal-4">
+      <div class="inner-circle"></div>
+      <span>$20M
+
+      </span>
+    </div>
+    <div class="canvas-marker sp-goal-5">
+      <div class="inner-circle"></div>
+      <span>$25M
+
+      </span>
+    </div>
+    <div class="canvas-marker sp-goal-6">
+      <div class="inner-circle"></div>
+      <span>$30M
+
+      </span>
+    </div>
+    <div class="canvas-marker sp-goal-7">
+      <div class="inner-circle"></div>
+      <span>$50M
+        <div>hard cap</div>
+      </span>
+    </div>
+
+
+  </div>
+  <div class="main-metr-progress">
+    <img src="img/goal-progress@2x.png" alt="">
+    <div class="progress-end">
+      <span>$50M
+        <span>hard cap</span>
+      </span>
+    </div>
+    <div class="progress-soft-cap ">
+      <span>$22M
+        <span>soft cap</span>
+      </span>
+      <div class='inner-circle'></div>
+    </div>
+    <div class="progress-now-main-metr">
+
+      <div class="progress-now-underline"></div>
+      <div class="progress-now-marker">
+
+        <span id="main-metr-progress-text"></span>
+        <!-- Script.js - #5 -->
+        <div class='inner-circle'></div>
+      </div>
+    </div>
+  </div>
+  <p class="price-1-bcb">Price for 1 BCB</p>
+  <ul class="price">
+    <li class="step-done">
+      <div class="price-circle">
+
+        $0.50
+      </div>
+      <div class="price-description">
+        Private presale
+        <div class="price-date"> sold out</div>
+      </div>
+    </li>
+    <li class="price-line"></li>
+    <li class="step-done">
+      <div class="price-circle">
+
+        $0.70
+      </div>
+      <div class="price-description">
+        Private
+        <div class="price-date"> sold out</div>
+      </div>
+    </li>
+    <li class="price-line"></li>
+    <li class="step-active">
+      <div class="price-circle">
+
+        $0.80
+      </div>
+      <div class="price-description">
+        Round 1
+        <div class="price-date"> ends in 7 days</div>
+      </div>
+    </li>
+    <li class="price-line"></li>
+    <li class="step-next">
+      <div class="price-circle">
+
+        $1
+      </div>
+      <div class="price-description">
+        Round 2
+        <div class="price-date"> 11-30 April</div>
+      </div>
+    </li>
+    <li class="price-line"></li>
+    <li class="step-next">
+      <div class="price-circle">
+
+        $1,30
+      </div>
+      <div class="price-description">
+        Round 3
+        <div class="price-date"> 1-30 March</div>
+      </div>
+    </li>
+  </ul>
+  <p class="accepted-currebcies">Accepted currencies: BTC, ETH, LTC</p> 
+
+
+  </div>    
+ </div>
+  <div class="about">
+
+    <div class="about-img" id="aboutUs">
+      <img src="img/atm.png" alt="" class="img-atm">
+
+    </div>
+    <div class="about-description">
+      <h2>About BCB ATM</h2>
+      <div class="about-description-text">
+        <p>The United Kingdom is the third largest provider of functioning bitcoin ATMs, coming in behind the United States
+          and Canada respectively, which are both larger in population and geography.</p>
+        <br>
+        <p>In April of 2017, there were approximately 60 cryptocurrency ATMs in the U.K., with this number breaching 100 by
+          December. The increasing trend regarding the use of bitcoins and other crypto currencies has resulted in the need
+          for even more to be added across the country.</p>
+
+      </div>
+      <div class="about-description-info">
+        <div class="about-description-info-block">
+          <p class="about-description-info-title">coverage</p>
+          <p>
+            <span class="about-description-info-value">60</span>
+            <span class="about-description-info-atm">ATMs</span>
+          </p>
+          <p class="about-description-info-date">In April of 2017</p>
+        </div>
+        <div class="about-description-info-block">
+          <p class="about-description-info-title">growth</p>
+          <p>
+            <span class="about-description-info-value">7.43</span>
+            <span class="about-description-info-atm">ATMs</span>
+          </p>
+          <p class="about-description-info-date">installed daily</p>
+        </div>
+      </div>
+      <div class="about-description-text">
+        With trading volumes and usage of bitcoins increasing regularly, so is the demand for reliable and innovative supporting
+        infrastructure. Exchanges, online communities and trading platforms are now seeking support from bitcoin ATMs. These
+        are designed to simplify the exchange operations and we are at the forefront of this movement. Our goal is to help
+        make this network stronger, and you will find these currency exchange machines present throughout the UK, and the
+        entirety of the European continent.
+      </div>
+    </div>
+    <div class="video">
+      <div class='video-description' id="play-video">
+
+        <div id='video-play-btn'>
+          <p>see how it works</p>
+          <img src="img/play.png" alt="">
+        </div>
+
+      </div>
+      <video poster id='video-player'>
+        <source src="video/1.mp4">
+      </video>
+    </div>
+  </div>
+  <div class="bcg-planet" id="goals">
+
+    <div class="goals">
+
+      <div class="goal-header">
+        <div class='goal-title'>goals</div>
+      </div>
+
+      <div class="goal1-progress">
+        <div class="goal-progr"></div>
+        <div class="goal-1 goal">
+          <div class="inner-circle"></div>
+          <div class="goal-gescription">
+            <p>$5M</p>
+            <p>1 goal</p>
+            <p>205 ATMs</p>
+            <p>E-money license</p>
+            <p>
+              <img src="img/goals/arrow-goals.svg" alt="">
+            </p>
+          </div>
+        </div>
+        <div class="goal-2 goal">
+          <div class="inner-circle"></div>
+          <div class="goal-gescription">
+            <p>$10M</p>
+            <p>2 goal</p>
+            <p>334 ATMs</p>
+            <p>Ascend blockchain</p>
+            <p>BCB wallet</p>
+            <p>Arbitrage App</p>
+            <p>
+              <img src="img/goals/arrow-goals.svg" alt="">
+            </p>
+          </div>
+        </div>
+        <div class="goal-3 goal">
+          <div class="inner-circle"></div>
+          <div class="goal-gescription">
+            <p>$15M</p>
+            <p>3 goal</p>
+            <p>743 ATMs</p>
+            <p>
+              <img src="img/goals/arrow-goals.svg" alt="">
+            </p>
+          </div>
+        </div>
+        <div class="goal-4 goal">
+          <div class="inner-circle"></div>
+          <div class="goal-gescription">
+            <p>$20M</p>
+            <p>4 goal</p>
+            <p>1190 ATMs</p>
+            <p>New ATM design
+            </p>
+            <p>
+              <img src="img/goals/arrow-goals.svg" alt="">
+            </p>
+          </div>
+        </div>
+        <div class="goal-5 goal">
+          <div class="inner-circle"></div>
+          <div class="goal-gescription">
+            <p>$25M</p>
+            <p>5 goal</p>
+            <p>1619 ATMs</p>
+            <p>
+              <img src="img/goals/arrow-goals.svg" alt="">
+            </p>
+          </div>
+        </div>
+        <div class="goal-6 goal">
+          <div class="inner-circle"></div>
+          <div class="goal-gescription">
+            <p>$30M</p>
+            <p>6 goal</p>
+            <p>2046ATMs</p>
+            <p>
+              <img src="img/goals/arrow-goals.svg" alt="">
+            </p>
+          </div>
+        </div>
+        <div class="goal-7 goal">
+          <div class="inner-circle"></div>
+          <div class="goal-gescription">
+            <p>$50M</p>
+            <p>7 goal</p>
+            <p>3757 ATMs</p>
+            <p>
+              <img src="img/goals/arrow-goals.svg" alt="">
+            </p>
+          </div>
+        </div>
+        <div class="progress-now">
+
+          <div class="progress-now-marker">
+            <span id="goal-1-sum-text"></span>
+            <!-- Script.js - #3 -->
+
+          </div>
+        </div>
+      </div>
+      <div class="img-atms">
+        <img src="img/goals/205.png" alt="" class="atm-value-img img-205">
+        <img src="img/goals/334.png" alt="" class="atm-value-img img-334">
+        <img src="img/goals/743.png" alt="" class="atm-value-img img-743">
+        <img src="img/goals/1190.png" alt="" class="atm-value-img img-1190">
+        <img src="img/goals/1619.png" alt="" class="atm-value-img img-1619">
+        <img src="img/goals/2046.png" alt="" class="atm-value-img img-2046">
+        <img src="img/goals/3757.png" alt="" class="atm-value-img img-3757">
+      </div>
+      <div class="goals-progress-img">
+        <div class="goals-new-atm">
+          <img src="img/goals/atm-on.png" alt="" class="goals-progress-img-on atm-on">
+          <img src="img/goals/atm-off.png" alt="" class="goals-progress-img-off atm-off">
+          <div class="goals-progress-img-link">
+            <a target="_blank" href="whitepaper.pdf">New ATM design</a>
+          </div>
+        </div>
+        <div class="goals-arb">
+          <img src="img/goals/arb-on.png" alt="" class="goals-progress-img-on arb-on">
+          <img src="img/goals/arb-off.png" alt="" class="goals-progress-img-off arb-off">
+          <div class="goals-progress-img-link">
+            <a target="_blank" href="whitepaper.pdf" href="#">Arbitrage app</a>
+          </div>
+        </div>
+        <div class="goals-wall">
+          <img src="img/goals/wall-on.png" alt="" class="goals-progress-img-on wall-on">
+          <img src="img/goals/wall-off.png" alt="" class="goals-progress-img-off wall-off">
+          <div class="goals-progress-img-link">
+            <a target="_blank" href="whitepaper.pdf" href="#">BCB wallet</a>
+          </div>
+        </div>
+        <div class="goals-blch">
+          <img src="img/goals/blch-on.png" alt="" class="goals-progress-img-on blch-on">
+          <img src="img/goals/blch-off.png" alt="" class="goals-progress-img-off blch-off">
+          <div class="goals-progress-img-link">
+            <a target="_blank" href="whitepaper.pdf" href="#">Ascend blockchain</a>
+          </div>
+        </div>
+        <div class="goals-lis">
+          <img src="img/goals/lis-on.png" alt="" class="goals-progress-img-on lis-on">
+          <img src="img/goals/lis-off.png" alt="" class="goals-progress-img-off lis-off">
+          <div class="goals-progress-img-link">
+            <a target="_blank" href="whitepaper.pdf" href="#">E-money license</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+  <div class="bcg-3">
+    <img src="img/blockchain-center.png" alt="" class='img-blockchain'>
+    <img src="img/blockchain-mobile-center@2x.png" alt="" class='img-blockchain-mobile'>
+    <div class="ascend-blockchain" id="ascend-blockchain">
+      <div class="ascend-blockchain-title">
+        Ascend blockchain
+      </div>
+      <div class="ascend-blockchain-text">
+        Right now most cryptos are utilised for speculation or have a specific utility. Bitcoin was created as new payment system
+        to kick the ass of the current banking system BUT right now we can see that bitcoin is digital gold as it can only
+        be spent at specific places. Transaction costs can be very high and speed of transaction is not very good. Our solution
+        is new payment system based on new blockchain DPOS (delegated proof of stake) called Ascend Blockchain.
+      </div>
+    </div>
+    <div class="tokens-bonus">
+      <div class="tokens-bonus-value">
+        <p class="tokens-bonus-title">bonus for</p>
+        <p class="tokens-bonus-count">5000</p>
+        <p class="tokens-bonus-desc">tokens</p>
+      </div>
+      <div class="tokens-bonus-text">
+        If user has over 5000 tokens he will be able to initiate his own communication center and verify transactions and get rewards
+        from commissions with transaction.
+      </div>
+    </div>
+  </div>
+  <div class="create-bcb-wallet">
+    <div class="create-bcb-wallet-text">
+      <p class="create-bcb-wallet-title">BCB wallet</p>
+      <div class="create-bcb-wallet-description">
+        <div>Secure Mobile wallet for crypto </div>
+        <div>NFC and QR code payment options </div>
+        <div>Exchnage crypto to crypto in App </div>
+        <div>Send crypto to your friends by phone number</div>
+        <div>Find the nearest ATMs in 2 clicks</div>
+      </div>
+      <div class="create-bcb-wallet-link">
+        <a target="_blank" href="whitepaper.pdf">+ Learn more in Whitepaper</a>
+      </div>
+
+    </div>
+    <div class="create-bcb-wallet-img">
+
+    </div>
+  </div>
+  <div class="arbitrage">
+    <div class="arbitrage-title">
+      Arbitrage application
+    </div>
+    <div class="arbitrage-text">
+      BCB Arbitrage will allow users put their cryptos for sale at Specific ATMs worldwide. Based on auto-script we will implement
+      SS (Smart-Sell) technology that allow users sell their cryptos for the best price for fiat money. By creating bank
+      accounts around the world and utilising an e-money license users can selll bit count in another country yet obtain
+      the FIAT money usually within a day and in most countries within hours. The more countries available the more opportunity
+      will exist for users to buy and sell crypto and make arbitrage as well as obtaining part of the fee at ATMs.
+    </div>
+    <div style="display: none;" class="arbitrage-link">
+      <span class="arbitrage-link-a">+ Learn more</span>
+    </div>
+    <div class="popup-page popup-arbitrage">
+      <div>
+        <div>
+          <h2>Arbitrage application</h2>
+          <p>
+            The park described by writers as ‘ a home for the Gods’ covers 150sq mile south of Nairobi and lies just at the foot of Mt
+            Kilimanjaro, Africa’s highest mountain at 5,895m. The park is currently on the cross roads with the government
+            and the local communities both claiming ownership, with Kilimanjaro’s snow capped peaks dominating every aspect
+            of this Park and form a stunning backdrop to the wildlife found here – elephant, lion, leopard, rhino, buffalo,
+            cheetah and a host of
+          </p>
+          <p>
+            The park described by writers as ‘ a home for the Gods’ covers 150sq mile south of Nairobi and lies just at the foot of Mt
+            Kilimanjaro, Africa’s highest mountain at 5,895m. The park is currently on the cross roads with the government
+            and the local communities both claiming ownership, with Kilimanjaro’s snow capped peaks dominating every aspect
+            of this Park and form a stunning backdrop to the wildlife found here – elephant, lion, leopard, rhino, buffalo,
+            cheetah and a host of
+          </p>
+        </div>
+        <div class="close-popup">
+          <div class="btn-close-popup">
+            <img src="img/popup-close.svg" alt=""> Close
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="new-atm">
+    <div class="new-atm-title">New ATM design</div>
+    <div class="new-atm-text">
+      <p>
+        BCB ATM is taking this to another level with its revolutionary new take on the Bitcoin ATM.
+        <br>
+        <br>
+        <strong>BCB Glass i</strong> Will provide a thorough understanding of the current performance of the BCB ATMs, rigorous evaluation
+        of any proposals for change, and decision-making based on advanced analytics. These capabilities give executives
+        a strategic advantage when responding to and managing self-service networks.
+        <br> Powerful reporting tools in the BCB Glass i platform allow the business owners hosting the BCB to design reports
+        accorind to the information the require A dashing dashboards with seamless report creation which provides a rich
+        customer experience.
+      </p>
+    </div>
+    <div class="new-atm-link">
+      <span class="new-atm-link-link-a">+ Learn more</span>
+    </div>
+    <div class="popup-page popup-new-atm">
+      <div>
+        <h2>New ATM design</h2>
+
+        <p>
+          The World's first ATM was installed in ENFIELD town, London on June 27 1967 by Barclaysbank.
+          <br>
+          <br> BCB ATM is taking this to another level with its revolutionary new take on the Bitcoin ATM -
+          <strong>BCB Glas i</strong>.
+          <br>
+          <br> Bitcoin ATMs are an increasingly popular solution for buying the digital currency because of their convenience
+          and simplicity.
+          <br>
+          <br>
+          <strong>BCB Glas i</strong> Will provide a thorough understanding of the current performance of the BCB ATMs, rigorous
+          evaluation of any proposals for change, and decision-making based on advanced analytics. These capabilities give
+          executives a strategic advantage when responding to and managing self-service networks.
+          <br>
+          <br> Powerful reporting tools in the BCB Glass i platform allow the business owners hosting the BCB to design reports
+          accorind to the information the require A dashing dashboards with seamless report creation which provides a rich
+          customer experience. Incident integration using specific rules to monitor, collaborate, and create tickets improves
+          operational reliability and the customer experience.
+          <br>
+          <br> - Streamline Cash Replenishment and crypto liquidaty
+          <br> - Real-time Monitoring
+          <br> - Mobile Top up
+          <br> - Bill Payments
+          <br> - Fines
+          <br> - ICO Investments
+          <br> - KYC via a BCB ATM
+          <br> - Make and receive international payments
+          <br>
+        </p>
+      </div>
+      <div class="close-popup">
+        <div class="btn-close-popup">
+          <img src="img/popup-close.svg" alt=""> Close
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  </div>
+  <div  class="roadmap" id="roadmap">
+    <h5>Roadmap</h5>
+    <div class="roadmap-block">
+    <svg width="1100" height="2200" id="roadmap-svg">
+      <path stroke="#fff" id="q3-15"
+      stroke-width="5" fill="none" d="M 0 10 L 100 10 "/>
+      <path stroke="#fff" id="q4-15"
+      stroke-width="5" fill="none" d="M 100 10 L 300 10 "/>
+      <path stroke="#fff" id="q1-16"
+      stroke-width="5" fill="none" d="M 300 10 L 500 10 "/>
+      <path stroke="#fff" id="q2-16"
+      stroke-width="5" fill="none" d="M 500 10 L 690 10 "/>
+      <path stroke="#fff" id="q3-16"
+      stroke-width="5" fill="none" d="M 690 10 L 1070 10 Q 1090 10 1090 30 L 1090 530 Q 1090 550 1070 550 "/>
+      <path stroke="#fff" id="q4-16"
+      stroke-width="5" fill="none" d="M 1070 550 L 730 550 "/>
+      <path stroke="#fff" id="q1-17"
+      stroke-width="5" fill="none" d="M 730 550 L 530 550 "/>
+      <path stroke="#fff" id="q2-17"
+      stroke-width="5" fill="none" d="M 530 550 L 330 550 "/>
+      <path stroke="#fff" id="q3-17"
+      stroke-width="5" fill="none" d="M 330 550 L 130 550 "/>
+      <path stroke="#fff" id="q4-17"
+      stroke-width="5" fill="none" d="M 130 550 L 30 550 Q 10 550 10 570 L 10 1000 Q 10 1020 30 1020"/>
+      <path stroke="#fff" id="q1-18"
+      stroke-width="5" fill="none" d="M 30 1020 L 170 1020 "/>
+      <path stroke="#fff" id="q2-18"
+      stroke-width="5" fill="none" d="M 170 1020 L 370 1020 "/>
+      <path stroke="#fff" id="q3-18"
+      stroke-width="5" fill="none" d="M 370 1020 L 570 1020 "/>
+      <path stroke="#fff" id="q4-18"
+      stroke-width="5" fill="none" d="M 570 1020 L 770 1020 "/>
+      <path stroke="#fff" id="q1-19"
+      stroke-width="5" fill="none" d="M 770 1020 L 1070 1020 Q 1090 1020 1090 1040 L 1090 1650 Q 1090 1670 1070 1670"/>
+      <path stroke="#fff" id="q2-19"
+      stroke-width="5" fill="none" d="M 1070 1670 L 720 1670 "/>
+      <path stroke="#fff" id="q3-19"
+      stroke-width="5" fill="none" d="M 720 1670 L 520 1670 "/>
+      <path stroke="#fff" id="q4-19"
+      stroke-width="5" fill="none" d="M 520 1670 L 320 1670 "/>
+      <path stroke="#fff" id="q1-20"
+      stroke-width="5" fill="none" d="M 320 1670 L 150 1670 "/>
+      <path stroke="#fff" id="q2-20"
+      stroke-width="5" fill="none" d="M 150 1670 L 30 1670 Q 10 1670 10 1690 L 10 2100 Q 10 2120 30 2120"/>
+      <path stroke="#fff" id="q3-20"
+      stroke-width="5" fill="none" d="M 30 2120 L 190 2120 "/>
+      <path stroke="#fff" id="q4-20"
+      stroke-width="5" fill="none" d="M 190 2120 L 390 2120 "/>
+      <path stroke="#fff" id="q1-21"
+      stroke-width="5" fill="none" d="M 390 2120 L 590 2120 "/>
+      <path stroke="#fff" id="q2-21"
+      stroke-width="5" fill="none" d="M 590 2120 L 790 2120 "/>
+      <path stroke="#fff" id="q3-21"
+      stroke-width="5" fill="none" d="M 790 2120 L 990 2120 "/>
+      <path stroke="#fff" id="q4-21"
+      stroke-width="5" fill="none" d="M 990 2120 L 1090 2120 "/>
+    </svg>
+    <ul class="block block-1">
+      <li class="s1">
+        <div class="text-block q3-15">
+          <p>Q3 2015</p>
+          <p>• Realising the UK Bitcoin ATM margins are extremely high we aim to Start a network with lowest fees. </p>
+          <p>• BCB ATM is born, business plan drafted, and we begin to look for investors </p>
+          <div class="arrow-out"></div>
+        </div>
+      </li>
+      <li class="s2">
+        <div class="text-block q4-15">
+          <p>Q4 2015</p>
+          <p>• With no investment insight, we incorporate BCB ATM LTD and use personal funds to buy the first Bitcoin ATM.</p>
+          <p>• We set our fees to 4% which an average of 3% lower than other operators</p>
+          <p>• The first BCB ATM is installed in Enfield London 18th November 2015. The same Borough as the world’s first cash machine. Installed by Barclays bank in 1967 by inventor John Shepherd-Barron</p>
+
+          <div class="arrow-out "></div>
+        </div>
+      </li>
+      <li class="s3">
+        <div class="text-block q1-16">
+          <p>Q1 2016</p>
+          <p>• Using profits and personal credit cards we ordered 2 more Bitcoin ATM’s </p>
+          <div class="arrow-out"></div>
+        </div>
+      </li>
+      <li class="s4" >
+        <div class="text-block q2-16">
+          <p>Q2 2016</p>
+          <p>• 2 new Bitcoin ATMs installed in London</p>
+          <div class="arrow-out"></div>
+        </div>
+      </li>
+      <li class="s5">
+        <div class="text-block q3-16">
+          <p>Q3 2016</p>
+          <p>• Third Bitcoin ATM goes live in London</p>
+          <div class="arrow-out"></div>
+        </div>
+      </li>
+      <li class="arrow-rm ar1"></li>
+    </ul>
+    <ul class="block block-2">
+      <li class="s10">
+        <div class="text-block q4-17">
+          <p>Q4 2017</p>
+          <p>• Bitcoin becomes the hottest topic in the media. Requests for Bitcoin ATM’s go through the roof.</p>
+          <p>• We now have the largest majority share of UK Bitcoin ATM market</p>
+          <p>• BCB rewards for using the ATM is added to TGE with Buy back & burn projection</p>
+
+          <div class="arrow-out"></div>
+        </div>
+      </li>
+      <li class="s9">
+        <div class="text-block q3-17">
+          <p>Q3 2017</p>
+          <p>• We now have 16 Bitcoin ATMs and become the UK’s fastest growing Bitcoin ATM operators </p>
+          <p>• BCB Ascend is added to the TGE, with treasurer</p>
+
+
+          <div class="arrow-out"></div>
+        </div>
+      </li>
+      <li class="s8">
+        <div class="text-block q2-17">
+          <p>Q2 2017</p>
+          <p>• We install our First 2 way Bitcoin ATM and don’t look back.
+          </p>
+          <p>• We add new Ideas for an APP towards the TGE plan, money transfer using ‘Lightning Network’</p>
+          <div class="arrow-out"></div>
+        </div>
+      </li>
+      <li class="s7">
+        <div class="text-block q1-17">
+          <p>Q1 2017</p>
+          <p>• We install 5 new locations.
+          </p>
+          <p>• We begin to float ideas for a TGE to improve the safest of the Bitcoin economic system</p>
+          <div class="arrow-out"></div>
+        </div>
+      </li>
+      <li class="s6">
+        <div class="text-block q4-16">
+          <p>Q4 2016</p>
+          <p>• We order 5 more Bitcoin ATMs as popularity grows. Transactions increase by 1778%
+          </p>
+          <p>• We begin to look for ways to reduce fees across our network</p>
+          <div class="arrow-out"></div>
+        </div>
+      </li>
+      <li class="arrow-rm ar2"></li>
+    </ul>
+    <ul class="block block-3">
+      <li class="s11">
+        <div class="text-block q1-18">
+          <p>Q1 2018</p>
+          <p>• Number of active BCB ATMs jump up by 50% across the UK</p>
+
+          <div class="arrow-out"></div>
+        </div>
+      </li>
+      <li class="s12">
+        <div class="text-block q2-18">
+          <p>Q2 2018</p>
+          <p>• Named “KING OF BITCOIN ATMS IN THE UK” by bitcoinist.com
+          </p>
+          <p>• Launch Token Generation Event to the public</p>
+
+          <div class="arrow-out"></div>
+        </div>
+      </li>
+      <li class="s13">
+        <div class="text-block q3-18">
+          <p>Q3 2018</p>
+          <p>• Install first 205 BCB ATM’s across England, Northern Ireland, Scotland and Wales.
+          </p>
+          <p>• Begin E-Money Licence Process: <br>— Pre-application<br>— Apply the process to obtain Authorisation with Restriction (AWR)<br>— Mobilisation to obtain Lifting Restriction (LR)<br>— After LR</p>
+          <div class="arrow-out"></div>
+        </div>
+      </li>
+      <li class="s14">
+        <div class="text-block q4-18">
+          <p>Q4 2018</p>
+          <p>• Install second batch +129 across Europe (Locations will be voted by those holding the Most BCB Tokens) from shortlist of 5 countries
+          </p>
+          <p>• Continue E-Money Licence Process:<br>— Submit developed regulatory business plan, along with recovery and resolution plan;<br>— Fully developed financial resource documents (ICAAP and ILAP);</p>
+          <p>• An outline of the proposed governance/structure/board/senior management regime, including a high-level structure with the ‘key guiding minds’ in place; senior management roles critical to mobilisation identified and ready for recruitment;</p>
+          <p>• Develop a high-level outline of IT systems; a document outlining how the bank will fund itself including capital adequacy </p>
+          <div class="arrow-out"></div>
+        </div>
+      </li>
+      <li class="s15">
+        <div class="text-block q1-19">
+          <p>Q1 2019</p>
+          <p>• Third batch +150 to be distributed. </p>
+          <div class="arrow-out"></div>
+        </div>
+      </li>
+      <li class="arrow-rm ar3"></li>
+    </ul>
+    <ul class="block block-4">
+      <li class="s20">
+        <div class="text-block q2-20">
+          <p>Q2 2020</p>
+          <p>• Use unlocked team bonus to increase international staff; boosting speed of installation across Europe
+          </p>
+          <p>• Distribution of new BCB ATMs to begin</p>
+          <p>• Eighths batch +400 to be distributed. Making a total of 2,143 BCB ATMs</p>
+
+          <div class="arrow-out"></div>
+        </div>
+      </li>
+      <li class="s19">
+        <div class="text-block q1-20">
+          <p>Q1 2020</p>
+          <p>• Manufacturing for new BCB ATMs
+          </p>
+          <p>• Seventh batch +400 to be distributed.</p>
+          <div class="arrow-out"></div>
+        </div>
+      </li>
+      <li class="s18">
+        <div class="text-block q4-19">
+          <p>Q4 2019</p>
+          <p>• Build and rigorous testing of New BCB ATM Prototype
+          </p>
+          <p>• Sixth batch +300 to be distributed. Making a total of 1,343 BCB ATMs</p>
+          <div class="arrow-out"></div>
+        </div>
+      </li>
+      <li class="s17">
+        <div class="text-block q3-19">
+          <p>Q3 2019</p>
+          <p>• New BCB ATM Underway – Concept evaluation
+          </p>
+          <p>• Fifth batch +300 to be distributed. Making a total of 1,043 BCB ATMs</p>
+          <div class="arrow-out"></div>
+        </div>
+      </li>
+      <li class="s16">
+        <div class="text-block q2-19">
+          <p>Q2 2019</p>
+          <p>• Forth batch +259 to be distributed. Making a total of 743 BCB ATMs</p>
+          <div class="arrow-out"></div>
+        </div>
+      </li>
+      <li class="arrow-rm ar4"></li>
+
+    </ul>
+    <ul class="block block-5">
+      <li class="s21">
+        <div class="text-block q3-20">
+          <p>Q3 2020</p>
+          <p>• Introduce business Plan and Market Introduction Plan for new BCB ATMs
+          </p>
+          <p>• Ninth batch +400 to be distributed. Making a total of 2,543 BCB ATMs</p>
+
+          <div class="arrow-out"></div>
+        </div>
+      </li>
+      <li class="s22">
+        <div class="text-block q4-20">
+          <p>Q4 2020</p>
+          <p>• Tenth batch +400 to be distributed. Making a total of 2,943 BCB ATMs</p>
+
+          <div class="arrow-out"></div>
+        </div>
+      </li>
+      <li class="s23">
+        <div class="text-block q1-21">
+          <p>Q1 2021</p>
+          <p>• Eleventh batch +400 to be distributed.</p>
+          <div class="arrow-out"></div>
+        </div>
+      </li>
+      <li class="s24">
+        <div class="text-block q2-21">
+          <p>Q2 2021</p>
+          <p>• Twelfth batch +400 to be distributed. Making a total of 3,343 BCB ATMs</p>
+          <div class="arrow-out"></div>
+        </div>
+      </li>
+      <li class="s25">
+        <div class="text-block q3-21">
+          <p>Q3 2021</p>
+          <p>• Thirteenth batch +400 to be distributed. Making a total of 3,743 BCB ATMs</p>
+          <div class="arrow-out"></div>
+        </div>
+      </li>
+      <li class="s26">
+        <div class="text-block q4-21">
+          <p>Q4 2021</p>
+          <p>• Fourteenth batch +400 to be distributed. Making a total of 4,143 BCB ATMs</p>
+          <div class="arrow-out"></div>
+        </div>
+      </li>
+      <li class="arrow-rm ar5"></li>
+
+    </ul>
+
+  </div>
+
+
+
+
+    <!-- <div class="roadmap-line">
+      
+      <div class="line-before line-before-1 "></div>
+      <div class="roadmap-1 ">
+        <div class="roadmap-text ">
+          <div class="roadmap-title">
+            May 2018
+          </div>
+          <div class="roadmap-description">
+            Conclusion of the ICO. Hire additional staff. Growth acceleration with net proceeds from ICO.
+          </div>
+        </div>
+
+      </div>
+      <div class="line-before line-before-2"></div>
+      <div class="roadmap-2">
+        <div class="roadmap-text">
+          <div class="roadmap-title">
+            May 2018
+          </div>
+          <div class="roadmap-description">
+            Conclusion of the ICO. Hire additional staff. Growth acceleration with net proceeds from ICO.
+          </div>
+        </div>
+      </div>
+      <div class="line-before line-before-3"></div>
+      <div class="roadmap-3">
+        <div class="roadmap-text">
+          <div class="roadmap-title">
+            May 2018
+          </div>
+          <div class="roadmap-description">
+            Conclusion of the ICO. Hire additional staff. Growth acceleration with net proceeds from ICO.
+          </div>
+        </div>
+      </div>
+      <div class="line-before line-before-4"></div>
+      <div class="roadmap-4">
+        <div class="roadmap-text">
+          <div class="roadmap-title">
+            May 2018
+          </div>
+          <div class="roadmap-description">
+            Conclusion of the ICO. Hire additional staff. Growth acceleration with net proceeds from ICO.
+          </div>
+        </div>
+      </div>
+      <div class="line-before line-before-5"></div>
+      <div class="roadmap-5">
+        <div class="roadmap-text">
+          <div class="roadmap-title">
+            May 2018
+          </div>
+          <div class="roadmap-description">
+            Conclusion of the ICO. Hire additional staff. Growth acceleration with net proceeds from ICO.
+          </div>
+        </div>
+      </div>
+      <div class="line-before line-before-6"></div>
+      <div class="roadmap-6">
+        <div class="roadmap-text">
+          <div class="roadmap-title">
+            May 2018
+          </div>
+          <div class="roadmap-description">
+            Conclusion of the ICO. Hire additional staff. Growth acceleration with net proceeds from ICO.
+          </div>
+        </div>
+      </div>
+      <div class="line-before line-before-7"></div>
+      <div class="roadmap-7"></div>
+    </div> -->
+  </div>
+  <div class="papers" id="papers">
+    <h5>Papers</h5>
+    <div class="papers-img">
+      <div>
+        <a target="_blank" href="whitepaper.pdf">
+          <img src="img/whitepaper@2x.jpg" alt="">
+          <div>
+            Whitepaper
+          </div>
+        </a>
+
+      </div>
+      <div class="page-summary">
+        <a href="#">
+          <img src="img/papers-one-page-sum@2x.jpg" alt="">
+          <div>One Page Summary</div>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+  <div class="team" id="team">
+    <h5>Team</h5>
+    <ul class='team-row'>
+      <li>
+        <img src="img/team/LANDRY@2x.png" alt="" class="team-photo">
+        <div class="team-item-description">
+          <div class="team-name">
+            <div>Landry Ntahe</div>
+            <div>Founder & CEO</div>
+          </div>
+          <div class="team-link">
+            <a href="https://www.linkedin.com/in/landry-ntahe" target="_blank">
+              <img src="img/team-linkedin.png" alt="">
+            </a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <img src="img/team/RYAN@2x.png" alt="" class="team-photo">
+        <div class="team-item-description">
+          <div class="team-name">
+            <div>Ryan Andallo</div>
+            <div>Chief Operating Officer </div>
+          </div>
+          <div class="team-link">
+            <a href="https://www.linkedin.com/in/ryanandallo" target="_blank">
+              <img src="img/team-linkedin.png" alt="">
+            </a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <img src="img/team/SHINELLE@2x.png" alt="" class="team-photo">
+        <div class="team-item-description">
+          <div class="team-name">
+            <div>Shinelle Ferdinand</div>
+            <div>Office Manager</div>
+          </div>
+          <div class="team-link">
+            <a href="https://www.linkedin.com/in/shinelle-ferdinand-663b1115b" target="_blank">
+              <img src="img/team-linkedin.png" alt="">
+            </a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <img src="img/team/JOELLE@2x.png" alt="" class="team-photo">
+        <div class="team-item-description">
+          <div class="team-name">
+            <div>Joelle Daley-Peart</div>
+            <div>HR Manager</div>
+          </div>
+          <div class="team-link">
+            <a href="https://www.linkedin.com/in/joelle-daley-75422557" target="_blank">
+              <img src="img/team-linkedin.png" alt="">
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <img src="img/team/team5.jpg" alt="" class="team-photo">
+        <div class="team-item-description">
+          <div class="team-name">
+            <div>Minakov Yurii</div>
+            <div>Backend Developer</div>
+          </div>
+          <div class="team-link">
+            <a href="#" target="_blank">
+              <img src="img/team-linkedin.png" alt="">
+            </a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <img src="img/team/team6.jpg" alt="" class="team-photo">
+        <div class="team-item-description">
+          <div class="team-name">
+            <div>Glushenko Artem</div>
+            <div>Blockchain Developer</div>
+          </div>
+          <div class="team-link">
+            <a href="#" target="_blank">
+              <img src="img/team-linkedin.png" alt="">
+            </a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <img src="img/team/team7.jpg" alt="" class="team-photo">
+        <div class="team-item-description">
+          <div class="team-name">
+            <div>Tkachev Avdei</div>
+            <div>Frontend Developer</div>
+          </div>
+          <div class="team-link">
+            <a href="#" target="_blank">
+              <img src="img/team-linkedin.png" alt="">
+            </a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <img src="img/team/team8.jpg" alt="" class="team-photo">
+        <div class="team-item-description">
+          <div class="team-name">
+            <div>Rumyancev Artem</div>
+            <div>C/C++ Developer</div>
+          </div>
+          <div class="team-link">
+            <a href="#" target="_blank">
+              <img src="img/team-linkedin.png" alt="">
+            </a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <img src="img/team/team9.jpg" alt="" class="team-photo">
+        <div class="team-item-description">
+          <div class="team-name">
+            <div>Rojkov Bogdan</div>
+            <div>C/C++ Developer</div>
+          </div>
+          <div class="team-link">
+            <a href="#" target="_blank">
+              <img src="img/team-linkedin.png" alt="">
+            </a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <img src="img/team/team10.jpg" alt="" class="team-photo">
+        <div class="team-item-description">
+          <div class="team-name">
+            <div>Grishanov Sergei</div>
+            <div>Backend Developer</div>
+          </div>
+          <div class="team-link">
+            <a href="#" target="_blank">
+              <img src="img/team-linkedin.png" alt="">
+            </a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <img src="img/team/team11.jpg" alt="" class="team-photo">
+        <div class="team-item-description">
+          <div class="team-name">
+            <div>Sergeev Dmitry</div>
+            <div>CTO</div>
+          </div>
+          <div class="team-link">
+            <a href="#" target="_blank">
+              <img src="img/team-linkedin.png" alt="">
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <img src="img/team-join.svg" alt="" class="team-photo">
+        <div class=" team-item-description team-item-join">
+          <a href="#">
+            <div class="plus">
+              <img src="img/team-plus.svg" alt="">
+
+            </div>
+            <div class="join-text">
+              Your can code, design, market or connect? Please, Join Us!
+            </div>
+            <div class="join-btn">
+              join
+              <div class="bcg-join-btn"></div>
+            </div>
+          </a>
+        </div>
+      </li>
+    </ul>
+
+  </div>
+  <div class="events" id="events">
+    <h5>Press and media</h5>
+    <div class="slider">
+      <div class='slide'>
+        <a target="_blank" href="https://twitter.com/bbc5live/status/940298647358468096">
+          <img src="img/events/img9.jpg" alt="">
+          <p>BBC Radio 5 live - Money laundering "possible" across all UK BTC ATMs</p>
+        </a>
+      </div>
+      <div class='slide'>
+        <a target="_blank" href="https://www.leicestermercury.co.uk/news/business/you-can-now-use-bitcoin-956218">
+          <img src="img/events/img2.jpg" alt="">
+          <p>Leicester Mercury - You can now use this Bitcoin cash machine</p>
+        </a>
+      </div>
+      <div class='slide'>
+        <a target="_blank" href="https://twitter.com/alexblakemore1/status/944107537850359809">
+          <img src="img/events/img8.jpg" alt="">
+          <p>Kesh’s Wines in Braunstone is one of the first places to install a BTC ATM</p>
+        </a>
+      </div>
+      <div class='slide'>
+        <a target="_blank" href="https://www.betterretailing.com/bitcoin-atm">
+          <img src="img/events/img10.jpg" alt="">
+          <p>Better Retailing - Stores with bitcoin can increase footfall with ATM</p>
+        </a>
+      </div>
+      <div class='slide'>
+        <a target="_blank" href="https://www.bbc.co.uk/news/uk-england-coventry-warwickshire-42838922">
+          <img src="img/events/img5.jpg" alt="">
+          <p>BBC Mews - Is bitcoin finally going mainstream in the Midlands?</p>
+        </a>
+      </div>
+      <div class='slide'>
+        <a target="_blank" href="https://bitcoinist.com/student-job-market-startup-bitjob-connects-uk-atm-company/">
+          <img src="img/events/img4.jpg" alt="">
+          <p>BitJob have this week announced a collaboration deal with BCB ATM UK</p>
+        </a>
+      </div>
+    </div>
+
+  </div>
+  <div class="meet">
+    <h6>You can meet Us</h6>
+    <ul>
+      <li>
+        <div class="event">
+          Event
+        </div>
+        <div class="date">
+          <img src="img/events-date.svg" alt=""> Date
+        </div>
+        <div class="location">
+          <img src="img/events-location.svg" alt=""> Location
+        </div>
+      </li>
+
+      <li>
+        <div class="event">
+          Coinfest
+        </div>
+        <div class="date">
+          April 5, 2018
+        </div>
+        <div class="location">
+          Manchester, United Kingdom
+        </div>
+      </li>
+
+      <li>
+        <div class="event">
+          London Cryptocurrency Show
+        </div>
+        <div class="date">
+          April 14, 2018
+        </div>
+        <div class="location">
+          London, United Kingdom
+        </div>
+      </li>
+
+      <li>
+        <div class="event">
+          National Convenience Show
+        </div>
+        <div class="date">
+          April 16 - 18, 2018
+        </div>
+        <div class="location">
+          Birmingham, United Kingdom
+        </div>
+      </li>
+
+      <li>
+        <div class="event">
+          Blockchain & Bitcoin: Prague
+        </div>
+        <div class="date">
+          May 17, 2018
+        </div>
+        <div class="location">
+          Prague
+        </div>
+      </li>
+
+      <li>
+        <div class="event">
+          Blockchain & Bitcoin: Finland
+        </div>
+        <div class="date">
+          May 25, 2018
+        </div>
+        <div class="location">
+          Finland
+        </div>
+      </li>
+
+      <li>
+        <div class="event">
+          Blockchain International
+        </div>
+        <div class="date">
+          June 6 - 7, 2018
+        </div>
+        <div class="location">
+          London, United Kingdom
+        </div>
+      </li>
+
+      <li>
+        <div class="event">
+          Blockchain & Bitcoin: France
+        </div>
+        <div class="date">
+          July 18, 2018
+        </div>
+        <div class="location">
+          France
+        </div>
+      </li>
+
+      <li>
+        <div class="event">
+          ICO Event
+        </div>
+        <div class="date">
+          October 11, 2018
+        </div>
+        <div class="location">
+          London, United Kingdom
+        </div>
+      </li>
+
+      <li>
+        <div class="event">
+          Blockchain & Bitcoin: Malta
+        </div>
+        <div class="date">
+          October 23, 2018
+        </div>
+        <div class="location">
+          Malta
+        </div>
+      </li>
+
+    </ul>
+  </div>
+  <!--   <div class="press-about" id="press">
+    <h5>Press about Us</h5>
+    <ul class="press-logo-row">
+      <li>
+        Logo
+      </li>
+      <li>Logo</li>
+      <li>Logo</li>
+      <li>Logo</li>
+    </ul>
+    <ul class="press-logo-row">
+      <li>
+        Logo
+      </li>
+      <li>Logo</li>
+      <li>Logo</li>
+      <li>Logo</li>
+    </ul>
+  </div> -->
+
+  <div class="faq" id="faq">
+    <h5>FAQ</h5>
+
+    <ul class="faq-list accordion-menu">
+      <li class="question">
+        <div class="faq-question dropdownlink">
+          <div>How do I buy BCB tokens?</div>
+          <div class="close-tab">
+            <i class="fas fa-angle-down"></i>
+          </div>
+        </div>
+
+        <div class="faq-answer submenuItems">
+          Yes. For payments bigger than 1 ETH or 0.05 BTC you will receive 10% extra tokens.
+          <br> For payments bigger than 5 ETH or 0.3 BTC you will receive 20% extra tokens.
+          <br> For payments bigger than 10 ETH or 0.6 BTC you will receive 50% extra tokens.
+          <br> For payments bigger than 20 ETH or 1 BTC you will receive 75% extra tokens.
+          <br> For payments bigger than 50 ETH or 3 BTC you will receive 100% extra tokens.
+        </div>
+      </li>
+      <li class="question">
+        <div class="faq-question dropdownlink">
+          <div>What problems will BCB Token solve?</div>
+          <div class="close-tab">
+            <i class="fas fa-angle-down"></i>
+          </div>
+        </div>
+
+        <div class="faq-answer submenuItems">
+          Yes. For payments bigger than 1 ETH or 0.05 BTC you will receive 10% extra tokens.
+          <br> For payments bigger than 5 ETH or 0.3 BTC you will receive 20% extra tokens.
+          <br> For payments bigger than 10 ETH or 0.6 BTC you will receive 50% extra tokens.
+          <br> For payments bigger than 20 ETH or 1 BTC you will receive 75% extra tokens.
+          <br> For payments bigger than 50 ETH or 3 BTC you will receive 100% extra tokens.
+        </div>
+      </li>
+      <li class="question">
+        <div class="faq-question dropdownlink">
+          <div>Can I make payments directly from an exchange?</div>
+          <div class="close-tab">
+            <i class="fas fa-angle-down"></i>
+          </div>
+        </div>
+
+        <div class="faq-answer submenuItems">
+          Yes. For payments bigger than 1 ETH or 0.05 BTC you will receive 10% extra tokens.
+          <br> For payments bigger than 5 ETH or 0.3 BTC you will receive 20% extra tokens.
+          <br> For payments bigger than 10 ETH or 0.6 BTC you will receive 50% extra tokens.
+          <br> For payments bigger than 20 ETH or 1 BTC you will receive 75% extra tokens.
+          <br> For payments bigger than 50 ETH or 3 BTC you will receive 100% extra tokens.
+        </div>
+      </li>
+      <li class="question">
+        <div class="faq-question dropdownlink">
+          <div>What is the price of BCB token?</div>
+          <div class="close-tab">
+            <i class="fas fa-angle-down"></i>
+          </div>
+        </div>
+
+        <div class="faq-answer submenuItems">
+          Yes. For payments bigger than 1 ETH or 0.05 BTC you will receive 10% extra tokens.
+          <br> For payments bigger than 5 ETH or 0.3 BTC you will receive 20% extra tokens.
+          <br> For payments bigger than 10 ETH or 0.6 BTC you will receive 50% extra tokens.
+          <br> For payments bigger than 20 ETH or 1 BTC you will receive 75% extra tokens.
+          <br> For payments bigger than 50 ETH or 3 BTC you will receive 100% extra tokens.
+        </div>
+      </li>
+      <li class="question">
+        <div class="faq-question dropdownlink">
+          <div>Do you offer bonuses?</div>
+          <div class="close-tab">
+            <i class="fas fa-angle-down"></i>
+          </div>
+        </div>
+
+        <div class="faq-answer submenuItems">
+          Yes. For payments bigger than 1 ETH or 0.05 BTC you will receive 10% extra tokens.
+          <br> For payments bigger than 5 ETH or 0.3 BTC you will receive 20% extra tokens.
+          <br> For payments bigger than 10 ETH or 0.6 BTC you will receive 50% extra tokens.
+          <br> For payments bigger than 20 ETH or 1 BTC you will receive 75% extra tokens.
+          <br> For payments bigger than 50 ETH or 3 BTC you will receive 100% extra tokens.
+        </div>
+      </li>
+      <li class="question">
+        <div class="faq-question dropdownlink">
+          <div>How do I buy BCB tokens?</div>
+          <div class="close-tab">
+            <i class="fas fa-angle-down"></i>
+          </div>
+        </div>
+
+        <div class="faq-answer submenuItems">
+          Yes. For payments bigger than 1 ETH or 0.05 BTC you will receive 10% extra tokens.
+          <br> For payments bigger than 5 ETH or 0.3 BTC you will receive 20% extra tokens.
+          <br> For payments bigger than 10 ETH or 0.6 BTC you will receive 50% extra tokens.
+          <br> For payments bigger than 20 ETH or 1 BTC you will receive 75% extra tokens.
+          <br> For payments bigger than 50 ETH or 3 BTC you will receive 100% extra tokens.
+        </div>
+      </li>
+      <li class="question">
+        <div class="faq-question dropdownlink">
+          <div>How do I buy BCB tokens?</div>
+          <div class="close-tab">
+            <i class="fas fa-angle-down"></i>
+          </div>
+        </div>
+
+        <div class="faq-answer submenuItems">
+          Yes. For payments bigger than 1 ETH or 0.05 BTC you will receive 10% extra tokens.
+          <br> For payments bigger than 5 ETH or 0.3 BTC you will receive 20% extra tokens.
+          <br> For payments bigger than 10 ETH or 0.6 BTC you will receive 50% extra tokens.
+          <br> For payments bigger than 20 ETH or 1 BTC you will receive 75% extra tokens.
+          <br> For payments bigger than 50 ETH or 3 BTC you will receive 100% extra tokens.
+        </div>
+      </li>
+      <li class="question">
+        <div class="faq-question dropdownlink">
+          <div>How do I buy BCB tokens?</div>
+          <div class="close-tab">
+            <i class="fas fa-angle-down"></i>
+          </div>
+        </div>
+
+        <div class="faq-answer submenuItems">
+          Yes. For payments bigger than 1 ETH or 0.05 BTC you will receive 10% extra tokens.
+          <br> For payments bigger than 5 ETH or 0.3 BTC you will receive 20% extra tokens.
+          <br> For payments bigger than 10 ETH or 0.6 BTC you will receive 50% extra tokens.
+          <br> For payments bigger than 20 ETH or 1 BTC you will receive 75% extra tokens.
+          <br> For payments bigger than 50 ETH or 3 BTC you will receive 100% extra tokens.
+        </div>
+      </li>
+      <li class="question">
+        <div class="faq-question dropdownlink">
+          <div>How do I buy BCB tokens?</div>
+          <div class="close-tab">
+            <i class="fas fa-angle-down"></i>
+          </div>
+        </div>
+
+        <div class="faq-answer submenuItems">
+          Yes. For payments bigger than 1 ETH or 0.05 BTC you will receive 10% extra tokens.
+          <br> For payments bigger than 5 ETH or 0.3 BTC you will receive 20% extra tokens.
+          <br> For payments bigger than 10 ETH or 0.6 BTC you will receive 50% extra tokens.
+          <br> For payments bigger than 20 ETH or 1 BTC you will receive 75% extra tokens.
+          <br> For payments bigger than 50 ETH or 3 BTC you will receive 100% extra tokens.
+        </div>
+      </li>
+
+    </ul>
+  </div>
+  <div class="get-in" id="getin">
+    <h5>Get in touch</h5>
+    <div>
+      If you don't want to miss the latest news and always stay updated on our development process - subscribe to our email newsletter
+      and follow us on our social media.
+    </div>
+    <form class="subscription get-in-touch">
+      <div class="input-email">
+        <div class="input">
+          <img src="img/subscribe-mail.svg" alt="" class="subscribe-mail">
+          <input type="email" placeholder="Email address" required>
+        </div>
+        
+        <button type="submit" class="subscribe-btn">Subscribe</button>
+      </div>
+      <div class="message">Thank you</div>
+    </form>
+    <div class="follow">
+      <h6>Follow us</h6>
+      <ul>
+        <li>
+          <a href="https://linkedin.com/company/BCB-atm" target="_blank">
+            <img src="img/linkedin.svg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="https://facebook.com/BCBatm" target="_blank">
+            <img src="img/fb.svg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="https://t.me/bcbatmofficial" target="_blank">
+            <img src="img/tg.svg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/bcb_atm" target="_blank">
+            <img src="img/tw.svg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com/BCB_atm" target="_blank">
+            <img src="img/ig.png" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="https://bcb-atm.com/" target="_blank">
+            <img src="img/link.png" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-menu">
+      <!--       <ul class="footer-menu-1">
+        <li>
+          <a href="#">Token Market</a>
+        </li>
+        <li>
+          <a href="#">Brave New Coin</a>
+        </li>
+        <li>
+          <a href="#">ICO Rating</a>
+        </li>
+        <li>
+          <a href="#">ICO Tracker</a>
+        </li>
+        <li>
+          <a href="#">News BTC</a>
+        </li>
+        <li>
+          <a href="#">Steemit</a>
+        </li>
+      </ul>
+      <ul class="footer-menu-2">
+        <li>
+          <a href="#">Token Market</a>
+        </li>
+        <li>
+          <a href="#">Brave New Coin</a>
+        </li>
+        <li>
+          <a href="#">ICO Rating</a>
+        </li>
+        <li>
+          <a href="#">News BTC</a>
+        </li>
+        <li>
+          <a href="#">Steemit</a>
+        </li>
+        <li>
+          <a href="#">Thunderclap</a>
+        </li>
+      </ul> -->
+      <ul class="footer-menu-3">
+        <li>
+          <a href="https://facebook.com/BCBatm" target="_blank">Facebook</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/bcb_atm" target="_blank">Twitter</a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/company/BCB-atm" target="_blank">LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://instagram.com/BCB_atm" target="_blank">Instagram</a>
+        </li>
+        <li>
+          <a href="https://t.me/bcbatmofficial" target="_blank">Telegram</a>
+        </li>
+      </ul>
+      <div class="footer-logo">
+        <img src="./img/bitmap@3x.png" alt="">
+        <p>
+          <a href="/terms">Terms of Use</a>
+        </p>
+
+        <p>© 2016-2018 BCB ATM</p>
+      </div>
+    </div>
+
+  </footer>
+
+  {{> fixed_footer}}
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.3/vivus.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.6.4/svg.js"></script>
+  <script src="/js/jquery1.11.js"></script>
+  <script src="/slick/slick.min.js"></script>
+  <script src="/js/script.js"></script>
+</body>
+
+</html>
