@@ -1,0 +1,41 @@
+version: "3"
+services:
+  nginx:
+    build:
+      context: docker/nginx
+      dockerfile: Dockerfile.prod
+    image: bcb-landing-nginx
+    container_name: bcb-landing-nginx
+    restart: always
+    volumes:
+      - ./data/certs/geotrust:/etc/ssl/geotrust
+      - ./data/nginx/auth:/etc/auth
+    depends_on:
+      - web
+    ports:
+      - "80:80"
+      - "443:443"
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    image: bcb-landing-web
+    container_name: bcb-landing-web
+    restart: always
+    working_dir: /web
+    env_file:
+      - .env.local
+    ports:
+      - 5000
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo
+    container_name: bcb-landing-mongo
+    restart: always
+    volumes:
+      - ./data/mongo/db:/data/db
+    ports:
+      - "27017"

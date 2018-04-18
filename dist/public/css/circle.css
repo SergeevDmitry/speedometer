@@ -1,0 +1,246 @@
+.hello-float {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+.text-line {
+  display: block;
+  opacity: 1;
+}
+
+.text-line1 {
+  transition: opacity 1s 5s ease;
+}
+
+.text-line2 {
+  transition: opacity 1s 6s ease;
+}
+
+.float-svg .text-line{
+  opacity: 1;
+}
+
+.float-svg {
+  max-width: 538px;
+  /*   height: 574px; */
+  min-width: 320px;
+  height: auto;
+  display: block;
+  background: transparent;
+/*   margin-left: 160px; */
+  margin-top: 70px;
+  margin-left: calc(50% - 250px);
+}
+/* Light Circle */
+.circle-light {
+  fill: #F2EA7E;
+  opacity: 0;
+}
+
+.float-svg .circle-light {
+  opacity: 1;
+}
+/* Photo */
+.float-photo1 {
+  opacity: 0;
+}
+.float-photo2 {
+  opacity: 0;
+}
+
+.float-photo1 {
+  transition: opacity 1s 3s ease-in-out;
+}
+
+.float-photo2 {
+  transition: opacity 1s .5s ease-in-out;
+}
+
+.float-svg .float-photo2 {
+  opacity: 1;
+}
+
+.float-svg .float-photo1 {
+  opacity: 1;
+}
+
+/* Lines */
+.line {
+  fill: transparent;
+  stroke: #a5e3f8;
+  stroke-width: 120;
+  stroke-dasharray: 2 1180;
+  stroke-dashoffset: 0;
+  opacity: 0;
+  transition: stroke-dashoffset 1s 1.5s linear, opacity 1s 1.5s linear;
+  display: block;
+}
+
+.float-svg .line {
+  opacity: 1;
+}
+
+.float-svg .line1 {
+  stroke-dashoffset: -295;
+}
+
+.float-svg .line2 {
+  stroke-dashoffset: -114;
+}
+
+.float-svg .line3 {
+  stroke-dashoffset: 91;
+}
+
+.float-svg .line4 {
+  stroke-dashoffset: 154;
+}
+
+.float-svg .line5 {
+  stroke-dashoffset: 295;
+}
+
+/* Segments */
+.segment {
+  fill: transparent;
+  stroke-width: 86;
+  opacity: 0;
+  transform-origin: center center;
+  transform: rotate(-90deg);
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 1s 1.5s linear, opacity 1s 1.5s linear;
+}
+
+.segment0 {
+  transition: stroke-dasharray 1s 1.5s linear, opacity 1s 1.5s linear;
+}
+
+.float-svg .segment {
+  opacity: 1;
+}
+
+.float-svg .segment0 {
+  stroke: rgba(29, 175, 247, .3);
+  stroke-dasharray: 536 1000;
+  stroke-dashoffset: 0;
+  transform: rotate(90deg);
+  transform-origin: center center;
+}
+
+.float-svg .segment1 {
+  stroke: #d8ebf7;
+  stroke-dasharray: 163 1000;
+  stroke-dashoffset: -371;
+}
+
+.float-svg .segment2 {
+  stroke-width: 86;
+  stroke-dasharray: 214 1000;
+  stroke-dashoffset: -157;
+  stroke: #b3e3f9;
+}
+
+.float-svg .segment3 {
+  stroke: #78d6fd;
+  stroke-dasharray: 56 1000;
+  stroke-dashoffset: -130;
+}
+.float-svg .segment4 {
+  stroke: #4dcafd;
+  stroke-dasharray: 128 1000;
+  stroke-dashoffset: -2;
+}
+
+/* Segment labels */
+.label {
+  opacity: 1;
+  transition: opacity 1s 2s ease-in-out;
+}
+
+.label text{
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+
+.label-number {
+  fill: #0DBCFA;
+  font-weight: 300;
+}
+
+.label-text {
+  fill: #898989;
+  font-weight: 300;
+}
+
+.stamps {
+  position: relative;
+}
+
+.stamp  {
+  position: absolute;
+  top: 365px;
+  color: #fff;
+  height: 46px;
+  line-height: 46px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  text-align: center;
+  opacity: 0;
+}
+
+.stamp-float {
+  position: absolute;
+  left: 0px;
+  width: 112px;
+  height: 46px;
+  background: blue;
+  background: #36c5fd;
+  transition: opacity 1s 4s ease-in-out;
+}
+
+.stamp span {
+  position: relative;
+  display: block;
+  height: 100%;
+}
+
+.stamp-float span:after {
+  content: "";
+  display: none;
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: -10px;
+  top: 16px;
+  border-left: 10px solid #36c5fd;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+}
+
+.stamp-bank span:after {
+  content: "";
+  display: none;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -10px;
+  top: 16px;
+  border-right: 10px solid #fff;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+}
+
+.stamp-bank {
+  position: absolute;
+  right: 0px;
+  background: #fff;
+  width: 112px;
+  color: #969696;
+  transition: opacity 1s ease-in-out;
+}
+
+.stamp {
+  opacity: 1;
+}

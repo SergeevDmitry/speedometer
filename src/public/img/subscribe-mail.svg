@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="16px" viewBox="0 0 24 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>subscribe-mail</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bcb-ico-1366" transform="translate(-458.000000, -9942.000000)" fill="#555557" fill-rule="nonzero">
+            <g id="9-get-in-touch" transform="translate(343.000000, 9669.000000)">
+                <g id="get--in-touch">
+                    <g id="Group-5" transform="translate(90.000000, 256.000000)">
+                        <g id="Group-59">
+                            <path d="M36.6942018,26.7969231 L25.7385812,17 L47.6498223,17 L36.6942018,26.7969231 Z M47.6498223,33 L39.4515714,25.6646154 L37.038873,27.8307692 C36.9403955,27.9046154 36.8172986,27.9538462 36.6942018,27.9538462 C36.5711049,27.9538462 36.448008,27.9046154 36.3741499,27.8307692 L33.9614514,25.6646154 L25.7385812,33 L47.6498223,33 Z M33.1982509,25 L25,17.64 L25,32.3353846 L33.1982509,25 Z M48.3884035,32.36 L48.3884035,17.64 L40.1901526,25 L48.3884035,32.36 Z" id="subscribe-mail"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
