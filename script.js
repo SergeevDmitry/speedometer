@@ -1,4 +1,4 @@
-let icoSum = 25;
+let icoSum = 36.4;
 
 let speedometr = new Vivus("spd", {
   duration: 100,
@@ -51,7 +51,7 @@ function drawProgress() {
     animTime = 1200;
   }
   if (icoSum >= 20 && icoSum < 30) {
-    animTime = 1400;
+    animTime = 3000;
   }
   if (icoSum >= 30 && icoSum < 40) {
     animTime = 1600;
@@ -61,7 +61,7 @@ function drawProgress() {
   }
 
   var svg = document.querySelector("svg");
-  var canvas = SVG("spd").viewbox(-8, 17, 363, 263),
+  var canvas = SVG("spd").viewbox(-20, 17, 383, 263),
     path = canvas.path(
       "m50,295 C19,264 0,221 0,173 C0,77 77,0 173,0 C269,0 347,77 347,173 C347,221 327,265 295,296"
     ),
@@ -119,7 +119,7 @@ function drawProgress() {
       .center(cx, cy);
     let mask = canvas.mask().add(circle3);
     let circle4 = canvas
-      .circle(290)
+      .circle(268)
       .fill("none")
       .stroke({ width: 55, color: "rgba(255, 182, 0, 1)" })
       .center(cx, cy);
@@ -129,11 +129,59 @@ function drawProgress() {
       .stroke({ width: 5, color: "rgba(255, 182, 0, 1)" });
     progressPath.maskWith(mask);
 
-    let arrow = canvas
-      .path(`m${cx - 2} ${cy} L${x2} ${y2}`)
-      .stroke({ width: 4, color: "rgba(255, 182, 0, 1)" });
-    arrowId = arrow.node.id;
-    arrow.maskWith(mask2);
+
+ 
+   
+    if(icoS<=5) {
+        let arrow = canvas
+        .path(`m${cx + 10 } ${cy} L${cx-10} ${cy} L${x2} ${y2} z`)
+        .fill("rgba(255, 182, 0, 1)")
+        .transform({scale: 1.4})
+    
+        arrowId = arrow.node.id;
+        arrow.maskWith(mask2);
+    }
+    if(icoS>5 && icoS<10) {
+        let arrow = canvas
+        .path(`m${cx + 10 } ${cy} L${cx-10} ${cy-10} L${x2} ${y2} z`)
+        .fill("rgba(255, 182, 0, 1)")
+        .transform({scale: 1.4})
+    
+        arrowId = arrow.node.id;
+        arrow.maskWith(mask2);
+    }
+    if(icoS>=10 && icoS<=34) {
+        let arrow = canvas
+        .path(`m${cx + 10 } ${cy} L${cx-10} ${cy} L${x2} ${y2} z`)
+        .fill("rgba(255, 182, 0, 1)")
+        .transform({scale: 1.4})
+    
+        arrowId = arrow.node.id;
+        arrow.maskWith(mask2);
+    }
+    if(icoS>34 && icoS<44) {
+        let arrow = canvas
+        .path(`m${cx + 10 } ${cy} L${cx-10} ${cy-10} L${x2} ${y2} z`)
+        .fill("rgba(255, 182, 0, 1)")
+        .transform({scale: 1.4})
+    
+        arrowId = arrow.node.id;
+        arrow.maskWith(mask2);
+    }
+    if(icoS>=44) {
+        let arrow = canvas
+        .path(`m${cx + 10 } ${cy} L${cx-10} ${cy} L${x2} ${y2} z`)
+        .fill("rgba(255, 182, 0, 1)")
+        .transform({scale: 1.4})
+    
+        arrowId = arrow.node.id;
+        arrow.maskWith(mask2);
+    }
+    
+
+
+
+
 
     let circle2 = canvas
       .circle(10)

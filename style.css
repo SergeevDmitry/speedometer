@@ -17,10 +17,6 @@ body {
   width: 600px;
   height: 700px;
   margin: 100px auto; }
-  #spd svg, #svg-lines svg {
-    width: 95%;
-    margin: 0 auto;
-    left: 2.5%; }
   @media (max-width: 1500px) {
     #spd, #svg-lines {
       width: 50%; } }
