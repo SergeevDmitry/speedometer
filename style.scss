@@ -3,6 +3,7 @@ body {
     height: 100%;
     background-color: #aeaeae;
 }
+
 #spd, #svg-lines {
     position:relative;
     
@@ -11,9 +12,16 @@ body {
     perspective: 700px;
     perspective-origin: center center;
     display: block;
-    width: 30%;
+    width: 600px;
     height: 700px;
     margin: 100px auto;
+    
+    
+    svg {
+        width: 95%;
+        margin: 0 auto;
+        left:2.5%;
+    }
     
     @media(max-width:1500px) {
         width: 50%;
